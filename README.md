@@ -1,6 +1,6 @@
 # _Your project title_
 
-- _your name_
+- _Saif Niaz_
 - _your email (uoit.net)_
 
 ## About the language
