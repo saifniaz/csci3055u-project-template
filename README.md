@@ -1,7 +1,7 @@
 # _Your project title_
 
 - _Saif Niaz_
-- _your email (uoit.net)_
+- _md.niaz@uoit.net_
 
 ## About the language
 
