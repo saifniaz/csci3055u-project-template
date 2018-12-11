@@ -14,12 +14,15 @@
 
 > _give some code snippet of the language_
 
-*Let form*
+*Basic operation*
 
-```clojure
-(let [x 10
-      y 20]
-  (+ x y))
+```swift
+var age = 23
+let constant_m = "Mr. "
+var fname = "Saif"
+var message = "Hello " + constant_m + fname + ", your number is " + String(age)
+print(message)
+print(message.count)
 ```
 
 ## About the tools
