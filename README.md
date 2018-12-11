@@ -70,6 +70,15 @@ Along with translating Swift source code to executable machine codes, Swift comp
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
 
+Implementation of the standard library are found in Swift repository, under the subdirectory of stdlib/public. Standard library includes a number of data types, protocols, collections that describes protocols, algorithm that operates on protocols and low-level primitives. The Swift standard library are subdivided into more components, such as:
+
+-	Standard library core: The core library includes all types of data, protocols, functions and many more. For example: Int and Double for data types.
+
+-	Runtime: Runtime is a layer between compiler and core standard library, which is responsible for implementing dynamic features of the language. Some of these features include casting, type metadata and memory management. Runtime is usually written in C++ or Objective-C.
+
+-	SDK Overlays: SDK Overlay provide Swift based modification to existing Objective-C frameworks, which improves mapping the framework into Swift. Basically, overlay provides further support for interoperability with Objective-C code.
+
+
 ## About open source library
 
 > _Describe at least one contribution by the open source
