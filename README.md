@@ -67,9 +67,6 @@ Along with translating Swift source code to executable machine codes, Swift comp
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
-
 Implementation of the standard library are found in Swift repository, under the subdirectory of stdlib/public. Standard library includes a number of data types, protocols, collections that describes protocols, algorithm that operates on protocols and low-level primitives. The Swift standard library are subdivided into more components, such as:
 
 -	Standard library core: The core library includes all types of data, protocols, functions and many more. For example: Int and Double for data types.
@@ -83,6 +80,23 @@ Implementation of the standard library are found in Swift repository, under the 
 
 > _Describe at least one contribution by the open source
 community written in the language._
+
+*Foundation*
+
+> _Foundation framework is a base layer of functionality that provides primitive classes and several paradigms, which are not supported by the language or runtime. It is designed to provide small basic utility classes. Introduces consistent conventions that enhances the process of software development. It supports internationalization and localization and provides a OS independences.
+
+```swift
+import Foundation
+
+// Make an URLComponents instance
+let swifty = URLComponents(string: "https://swift.org")!
+
+// Print something useful about the URL
+print("\(swifty.host!)")
+
+// Output: "swift.org"
+```
+
 
 # Analysis of the language
 
