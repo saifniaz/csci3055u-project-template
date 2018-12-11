@@ -12,8 +12,6 @@
 
 ## About the syntax
 
-> _give some code snippet of the language_
-
 *Basic operation*
 
 ```swift
@@ -23,6 +21,30 @@ var fname = "Saif"
 var message = "Hello " + constant_m + fname + ", your number is " + String(age)
 print(message)
 print(message.count)
+```
+*if statement*
+
+```swift
+var grade = 75.50
+
+if grade >= 50 && grade < 60 {
+    print("Your grade is D")
+}else if grade >= 60 && grade < 70{
+    print("Your grade is C")
+}else if grade >= 70 && grade < 80{
+    print("Your grade is B")
+}else if grade >= 80{
+    print("Your grade is A")
+}else{
+    print("Sorry, your grade is F")
+}
+```
+*For Loop*
+
+```swift
+for _ in 1...5{
+    print("Hello!")
+}
 ```
 
 ## About the tools
