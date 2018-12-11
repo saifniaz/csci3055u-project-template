@@ -78,12 +78,9 @@ Implementation of the standard library are found in Swift repository, under the 
 
 ## About open source library
 
-> _Describe at least one contribution by the open source
-community written in the language._
-
 *Foundation*
 
-> _Foundation framework is a base layer of functionality that provides primitive classes and several paradigms, which are not supported by the language or runtime. It is designed to provide small basic utility classes. Introduces consistent conventions that enhances the process of software development. It supports internationalization and localization and provides a OS independences.
+Foundation framework is a base layer of functionality that provides primitive classes and several paradigms, which are not supported by the language or runtime. It is designed to provide small basic utility classes. Introduces consistent conventions that enhances the process of software development. It supports internationalization and localization and provides a OS independences.
 
 ```swift
 import Foundation
