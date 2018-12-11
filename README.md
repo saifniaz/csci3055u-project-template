@@ -49,9 +49,8 @@ for _ in 1...5{
 
 ## About the tools
 
-> Along with translating Swift source code to executable machine codes, Swift complier also supports number of other tools. Some of these tools include IDE integration with syntax coloring, code completion and other conveniences. Major components of Swift compiler are:
-
->   -   Parsing: Parsing is a recursive-descent parser with hand-coded lexer implemented. Its main responsibility is to generate an Abstract Syntax Tree (AST) without any semantic or type information, and creates warning for grammatical problems within the input source.
+_Along with translating Swift source code to executable machine codes, Swift complier also supports number of other tools. Some of these tools include IDE integration with syntax coloring, code completion and other conveniences. Major components of Swift compiler are:
+- _Parsing: Parsing is a recursive-descent parser with hand-coded lexer implemented. Its main responsibility is to generate an Abstract Syntax Tree (AST) without any semantic or type information, and creates warning for grammatical problems within the input source.
 
 ## About the standard library
 
