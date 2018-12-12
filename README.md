@@ -7,7 +7,11 @@
 
 > _Describe the language_
 >
-> - History
+*Defination*
+
+Swift is a general-purpose programming language that is specifically developed for macOS, iOS, tvOS, Linux and watchOS. The language was originally created by Apple Incorporation, with the goal of working with Cocoa Touch and their frameworks as well as a set of Objective C-Codes that have been written for the products of Apple Incorporation.
+
+*History*
 > - Some interesting features
 
 ## About the syntax
@@ -78,7 +82,7 @@ Implementation of the standard library are found in Swift repository, under the 
 
 ## About open source library
 
-*Foundation*
+> *Foundation*
 
 Foundation framework is a base layer of functionality that provides primitive classes and several paradigms, which are not supported by the language or runtime. It is designed to provide small basic utility classes. Introduces consistent conventions that enhances the process of software development. It supports internationalization and localization and provides a OS independences.
 
@@ -100,4 +104,19 @@ print("\(swifty.host!)")
 > _Organize your report according to the project description
 document_.
 
+> *Advantages of using Swift*
+- Rapid development process
+- Provide better scalability of the product and the team
+- Improved safety and performance
+- Decreased memory footprint by using dynamic libraries
+- Interoperability with Objective-C
+- Automatic memory management which provide garbage collector functionality
+- Has the ability to perform backend as well as front end
+- Open Source 
 
+> *Advantages of using Swift*
+- The language is still quite young, so the programming language is still being tested
+- Swift is often considered unstable
+- There are limited Swift developer available
+- Poor interoperability with third-party tools and IDEs
+- Lack of support for earlier iOS versions
