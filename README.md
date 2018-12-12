@@ -1,4 +1,4 @@
-# _Your project title_
+# _Swift_
 
 - _Saif Niaz_
 - _md.niaz@uoit.net_
@@ -57,29 +57,29 @@ for _ in 1...5{
 
 Along with translating Swift source code to executable machine codes, Swift complier also supports number of other tools. Some of these tools include IDE integration with syntax coloring, code completion and other conveniences. Major components of Swift compiler are:
 
-    - Parsing: Parsing is a recursive-descent parser with hand-coded lexer implemented. Its main responsibility is to generate an Abstract Syntax Tree (AST) without any semantic or type information, and creates warning for grammatical problems within the input source.
+- Parsing: Parsing is a recursive-descent parser with hand-coded lexer implemented. Its main responsibility is to generate an Abstract Syntax Tree (AST) without any semantic or type information, and creates warning for grammatical problems within the input source.
 
-    -	Semantic Analysis:  Semantic Analysis is responsible for taking the parsed AST and changing it into a fully-type-checked AST that emits warning for semantic errors in the source code. Semantic analysis specifies if it is safe to generate code upon successful type-checked AST.
+- Semantic Analysis:  Semantic Analysis is responsible for taking the parsed AST and changing it into a fully-type-checked AST that emits warning for semantic errors in the source code. Semantic analysis specifies if it is safe to generate code upon successful type-checked AST.
 
-    -	Clang Importer: Clang importer imports Clang module and maps the APIs from C or Objective-C into corresponding Swift APIs. 
+- Clang Importer: Clang importer imports Clang module and maps the APIs from C or Objective-C into corresponding Swift APIs. 
 
-    -	SIL generation: SIL stands for Swift Intermediate Language, which is suitable for further analysis and optimization on Swift code. In this phase the type-checked AST are lowered into raw SIL.
+- SIL generation: SIL stands for Swift Intermediate Language, which is suitable for further analysis and optimization on Swift code. In this phase the type-checked AST are lowered into raw SIL.
 
-    -	SIL guaranteed transformations: SIL guaranteed transformations perform further diagnostics on programs, which affects the accuracy of the programs. The result of these transformations is known as “canonical” SIL.
+- SIL guaranteed transformations: SIL guaranteed transformations perform further diagnostics on programs, which affects the accuracy of the programs. The result of these transformations is known as “canonical” SIL.
 
-    -	SIL Optimizations: The SIL optimizations perform specific optimizations on the program, such as Automatic Reference Counting, devirtualization and generic specialization.
+- SIL Optimizations: The SIL optimizations perform specific optimizations on the program, such as Automatic Reference Counting, devirtualization and generic specialization.
 
-    -	LLVM IR Generation: IR generation takes the optimized SIL and lowers it to LLVM IR. At this point LLVM continues to optimize the program and generate machine codes.
+- LLVM IR Generation: IR generation takes the optimized SIL and lowers it to LLVM IR. At this point LLVM continues to optimize the program and generate machine codes.
 
 ## About the standard library
 
 Implementation of the standard library are found in Swift repository, under the subdirectory of stdlib/public. Standard library includes a number of data types, protocols, collections that describes protocols, algorithm that operates on protocols and low-level primitives. The Swift standard library are subdivided into more components, such as:
 
-    -	Standard library core: The core library includes all types of data, protocols, functions and many more. For example: Int and Double for data types.
+- Standard library core: The core library includes all types of data, protocols, functions and many more. For example: Int and Double for data types.
 
-    -	Runtime: Runtime is a layer between compiler and core standard library, which is responsible for implementing dynamic features of the language. Some of these features include casting, type metadata and memory management. Runtime is usually written in C++ or Objective-C.
+- Runtime: Runtime is a layer between compiler and core standard library, which is responsible for implementing dynamic features of the language. Some of these features include casting, type metadata and memory management. Runtime is usually written in C++ or Objective-C.
 
-    -	SDK Overlays: SDK Overlay provide Swift based modification to existing Objective-C frameworks, which improves mapping the framework into Swift. Basically, overlay provides further support for interoperability with Objective-C code.
+- SDK Overlays: SDK Overlay provide Swift based modification to existing Objective-C frameworks, which improves mapping the framework into Swift. Basically, overlay provides further support for interoperability with Objective-C code.
 
 
 ## About open source library
@@ -88,17 +88,17 @@ Implementation of the standard library are found in Swift repository, under the 
 
 Foundation framework is a base layer of functionality that provides primitive classes and several paradigms, which are not supported by the language or runtime. It is designed to provide small basic utility classes. Introduces consistent conventions that enhances the process of software development. It supports internationalization and localization and provides a OS independences.
 
-    ```swift
-    import Foundation
+```swift
+import Foundation
 
-    // Make an URLComponents instance
-    let swifty = URLComponents(string: "https://swift.org")!
+// Make an URLComponents instance
+let swifty = URLComponents(string: "https://swift.org")!
 
-    // Print something useful about the URL
-    print("\(swifty.host!)")
+// Print something useful about the URL
+print("\(swifty.host!)")
 
-    // Output: "swift.org"
-    ```
+// Output: "swift.org"
+```
 
 
 # Analysis of the language
